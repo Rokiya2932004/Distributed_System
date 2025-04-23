@@ -1,0 +1,6 @@
+﻿  synchronization2.cpp
+E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\synchronization2\synchronization2.cpp(27,24): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+      E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\synchronization2\synchronization2.cpp(27,24):
+      consider using '%zd' in the format string
+  
+  synchronization2.vcxproj -> E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\synchronization2\x64\Debug\synchronization2.exe
