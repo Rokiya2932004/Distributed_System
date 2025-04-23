@@ -1,4 +1,17 @@
 
+/*
+####################################################
+####################################################
+												   ##
+												   ##
+		This code for Work-Sharing Drectives	   ##
+												   ##
+												   ##
+												   ##
+												   ##
+####################################################
+####################################################
+*/
 
 #include <stdio.h>
 #include <omp.h>
@@ -26,6 +39,9 @@ int main()
 		 nThreads = omp_get_num_threads();
 	}
 		printf("Num of Threads : %d ", nThreads);
+
+	/************ For ****************/
+
 	omp_set_num_threads(5);
 	printf("\nStatic Schedule :)\n");
 	printf("__________________\n\n");
@@ -41,7 +57,7 @@ int main()
 		printf("___________________________________________________________________________\n\n");
 
 
-		printf("\Dynamic Schedule :)\n");
+		printf("\nDynamic Schedule :)\n");
 		printf("_____________________\n\n");
 		omp_set_num_threads(8);
 
@@ -70,7 +86,7 @@ int main()
 		printf("___________________________________________________________________________\n\n");
 
 
-		printf("\Guided Schedule :)\n");
+		printf("\nGuided Schedule :)\n");
 		printf("_____________________\n\n");
 		omp_set_num_threads(8);
 #pragma omp parallel
@@ -112,6 +128,70 @@ int main()
 		printf("\nThe Thread that takes max exicution time is : %d with time : %f  seconds\n", maxThreadTime, maxTime);
 		printf("\nNote : the Guided code has a problem cause of Nested Parallelism lead to print the working thread just 0 and the max / min is different :( <<if U fix it tell me ^^ >> \n");
 
-	
+		printf("\n\n___________________________________________________________________________\n\n");
+
+
+	/************ Section  ****************/
+
+		printf("\nSection Directive :)\n");
+		printf("_____________________\n\n");
+			printf("The max threads used here is : 4\n"); 
+			omp_set_num_threads(4);
+#pragma omp parallel
+		{
+#pragma omp sections
+			{
+#pragma omp section
+				{
+					printf("\nThis is section 1 used to add two numbers\n");
+					int x=10, y=20;
+					printf("\n%d + %d = %d", x, y, (x + y));
+				}			
+#pragma omp section		
+				{			
+					printf("\n\nThis is section 2 used to sub two numbers\n");
+					int x=10, y=20;
+					printf("\n%d - %d = %d", x, y, (x - y));
+				}			
+#pragma omp section			
+				{			
+					printf("\n\nThis is section 3 used to divide two numbers\n");
+					int x=100, y=20;
+					printf("\n%d / %d = %d", x, y, (x / y));
+				}			
+#pragma omp section			
+				{			
+					printf("\n\nThis is section 4 used to multiply two numbers\n");
+					int x=10, y=20;
+					printf("\n%d * %d = %d", x, y, (x * y));
+				}
+			}
+		}
+		printf("\n\n___________________________________________________________________________\n\n");
+
+
+		/************ Single  ****************/
+
+		printf("\nSingle Directive :)\n");
+		printf("_____________________\n\n");
+		
+		omp_set_num_threads(8);
+#pragma omp parallel
+		{
+		int threadNum = omp_get_thread_num();
+		printf("\nThread %d: Starting work\n", threadNum);
+
+#pragma omp single
+			{
+				printf("\nThread %d i am single thread without wait\n ", threadNum);
+			}
+#pragma omp single nowait
+			{
+				printf("\nThread %d i am single thread with wait \n", threadNum);
+			}
+			printf("\nThread %d: Continuing work\n", threadNum);
+
+		}
+
 }
 

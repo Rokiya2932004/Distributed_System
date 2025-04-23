@@ -1,7 +1,5 @@
 ﻿  mpDirective.cpp
-E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(44,10): warning C4129: 'D': unrecognized character escape sequence
-E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(63,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(73,10): warning C4129: 'G': unrecognized character escape sequence
-E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(103,21): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(107,21): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(79,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(119,21): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\mpDirective.cpp(123,21): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   mpDirective.vcxproj -> E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\mpDirective\x64\Debug\mpDirective.exe
