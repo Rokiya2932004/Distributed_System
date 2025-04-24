@@ -1,3 +1,3 @@
 ﻿  Mpi.cpp
-E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\Mpi\Mpi.cpp(10,18): warning C4101: 'processID': unreferenced local variable
+E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\Mpi\Mpi.cpp(31,41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Mpi.vcxproj -> E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\Mpi\x64\Debug\Mpi.exe
