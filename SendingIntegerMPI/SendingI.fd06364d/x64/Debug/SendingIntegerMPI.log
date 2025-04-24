@@ -1,0 +1,7 @@
+﻿  SendingIntegerMPI.cpp
+E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\SendingIntegerMPI\SendingIntegerMPI.cpp(23,32): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\SendingIntegerMPI\SendingIntegerMPI.cpp(24,11): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'size_t'
+      E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\SendingIntegerMPI\SendingIntegerMPI.cpp(24,11):
+      consider using '%zd' in the format string
+  
+  SendingIntegerMPI.vcxproj -> E:\Collage Subjects\3 year\2S\Distributed\Labs\Codes\SendingIntegerMPI\x64\Debug\SendingIntegerMPI.exe
