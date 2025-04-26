@@ -18,7 +18,7 @@ int main()
 	{
 	num_threads = omp_get_num_threads();
 	}
-	printf("Number of threads: %d\n", num_threads);
+	printf("Number of threads: %d\n\n", num_threads);
 
 	return 0;
 
