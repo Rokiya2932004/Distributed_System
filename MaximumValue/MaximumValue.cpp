@@ -1,8 +1,8 @@
 /*
  Problem : Use OpenMP to parallelize finding the maximum value in an array. Apply synchronization to 
-ensure safe updates. 
+	ensure safe updates. 
 
-###--NOTE --> their is more than one solution  
+	###--NOTE --> their is more than one solution  
 
 */
 
@@ -30,7 +30,7 @@ int main()
 			}
 		}
 	}
-	printf("The max %d", max);
+	printf("The max %d\n\n\n\n", max);
 
 
 }
